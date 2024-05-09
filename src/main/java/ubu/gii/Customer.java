@@ -55,7 +55,7 @@ public class Customer {
 		return result;
 	}
 
-	private int getFrecuentRenterPoints(int frequentRenterPoints, Rental each) {
+	public int getFrecuentRenterPoints(int frequentRenterPoints, Rental each) {
 		frequentRenterPoints++;
 		// add bonus for a two day new release rental
 		if ((each.getMovie().getPriceCode() == Movie.NEW_RELEASE)
